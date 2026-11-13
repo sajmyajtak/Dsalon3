@@ -596,13 +596,27 @@
 
         /* Plynulé scrollování; na dotykových displejích zůstává nativní. */
         if (window.Lenis) {
-          var lenis = new window.Lenis({
-            anchors: { offset: -(($('[data-hlavicka]') || {}).offsetHeight || 0) - 12 }
-          });
+          var lenis = new window.Lenis();
           lenis.on('scroll', ScrollTrigger.update);
           gsap.ticker.add(function (cas) { lenis.raf(cas * 1000); });
           gsap.ticker.lagSmoothing(0);
           window.dstudioLenis = lenis;
+
+          /* Odkazy na kotvy: plynulý dojezd na stejné místo, kam by doskočil prohlížeč sám. */
+          d.addEventListener('click', function (u) {
+            var a = u.target.closest('a[href^="#"]');
+            if (!a || u.defaultPrevented || u.metaKey || u.ctrlKey || u.shiftKey) return;
+            var id = decodeURIComponent(a.getAttribute('href').slice(1));
+            var cil = id && d.getElementById(id);
+            if (!cil) return;
+            u.preventDefault();
+            var odstup = (parseFloat(getComputedStyle(koren).scrollPaddingTop) || 0) + (parseFloat(getComputedStyle(cil).scrollMarginTop) || 0);
+            var y = Math.max(0, cil.getBoundingClientRect().top + window.scrollY - odstup);
+            lenis.scrollTo(y, { duration: 1.1 });
+            if (history.pushState) history.pushState(null, '', '#' + id);
+            if (!cil.hasAttribute('tabindex')) cil.setAttribute('tabindex', '-1');
+            cil.focus({ preventScroll: true });
+          });
         }
 
         if (d.fonts && d.fonts.ready) d.fonts.ready.then(function () { ScrollTrigger.refresh(); });

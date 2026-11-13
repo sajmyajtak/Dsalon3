@@ -54,6 +54,7 @@ const souhlasOdmitnut = () => {
     const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 } });
     await ctx.addInitScript(souhlasOdmitnut);
     const externi = new Set();
+    let idsUvodu = null;
     for (const cesta of STRANKY) {
       const page = await ctx.newPage();
       await page.goto(ZAKLAD + cesta, { waitUntil: 'networkidle' });
@@ -87,12 +88,14 @@ const souhlasOdmitnut = () => {
         if (h.startsWith('#')) {
           zapis(data.ids.includes(h.slice(1)), `kotva ${h} na ${cesta}`);
         } else if (h.startsWith('/#')) {
-          const p2 = await ctx.newPage();
-          await p2.goto(ZAKLAD + '/', { waitUntil: 'networkidle' });
-          await p2.waitForTimeout(400);
-          const je = await p2.evaluate(id => !!document.getElementById(id), h.slice(2));
-          zapis(je, `kotva ${h} z ${cesta}`);
-          await p2.close();
+          if (!idsUvodu) {
+            const p2 = await ctx.newPage();
+            await p2.goto(ZAKLAD + '/', { waitUntil: 'networkidle' });
+            await p2.waitForTimeout(600);
+            idsUvodu = await p2.evaluate(() => [...document.querySelectorAll('[id]')].map(e => e.id));
+            await p2.close();
+          }
+          zapis(idsUvodu.includes(h.slice(2)), `kotva ${h} z ${cesta}`);
         } else if (h.startsWith('/')) {
           const r = await ctx.request.get(ZAKLAD + h);
           zapis(r.status() === 200, `interní odkaz ${h} z ${cesta}`, String(r.status()));

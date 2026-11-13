@@ -66,7 +66,7 @@ plochám a textu na tmavém podkladu. Žádné přechody, stíny ani zaoblení.
 
 ## Pohyb
 
-- **Parallax vrstvy** (GSAP ScrollTrigger + Lenis) podle komponenty, kterou vybral klient: scéna
+- **Parallax vrstvy** (GSAP ScrollTrigger + Lenis) podle zadané komponenty: scéna
   `data-parallax-layers` a vrstvy `data-parallax-layer="1"–"4"`. V úvodu vrstvy odjíždějí o 70 / 55 / 40 / 10 %
   výšky scény (linky, okno, text, práh) a úvod se zasouvá za čokoládový práh. V ostatních sekcích stejný mechanismus
   s menším rozsahem, aby text zůstal čitelný.

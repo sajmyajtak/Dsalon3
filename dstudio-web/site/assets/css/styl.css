@@ -93,7 +93,7 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   scroll-behavior: smooth;
-  scroll-padding-top: calc(var(--hlavicka-v) + 1rem);
+  scroll-padding-top: calc(var(--hlavicka-v) - 1px);
 }
 html.lenis, html.lenis body { height: auto; }
 html.lenis { scroll-behavior: auto; }
@@ -135,6 +135,9 @@ h1, h2, h3 { text-wrap: balance; font-weight: 300; }
   outline: 2px solid var(--ostrost, var(--emerald));
   outline-offset: 3px;
 }
+
+/* Cíle kotev dostávají fokus jen kvůli čtečkám a klávesnici, rámeček kolem celé sekce by rušil. */
+main:focus, section[tabindex="-1"]:focus, div[tabindex="-1"]:focus { outline: none; }
 
 a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.22em; }
 
@@ -192,7 +195,6 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.22e
 .sekce {
   padding-block: var(--sekce-v);
   overflow: clip;
-  scroll-margin-top: var(--hlavicka-v);
 }
 .sekce > .obal { position: relative; z-index: 1; }
 
@@ -411,8 +413,14 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.22e
 /* ==========================================================================
    Úvod: vrstvy s parallaxem
    ========================================================================== */
-.uvod { overflow: clip; isolation: isolate; }
-.uvod__linky { top: 52%; bottom: 0; }
+/* Výřez drží vrstvy uvnitř úvodu; sahá i pod práh, aby za ním při posunu nevznikla mezera. */
+.uvod__vyrez {
+  position: relative; z-index: 1;
+  overflow: clip;
+  background: var(--white);
+  padding-bottom: 14rem; margin-bottom: -14rem;
+}
+.uvod__linky { top: 52%; bottom: 14rem; }
 .uvod__scena {
   position: relative; z-index: 1;
   display: grid; gap: 2.5rem;
@@ -514,6 +522,13 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.22e
   .uvod__prah-stitek { min-width: 0; }
 }
 
+/* Menší notebooky a tablety na šířku: okno dostane pět sloupců, nadpis se zmenší, aby věty držely pohromadě */
+@media (min-width: 60em) and (max-width: 74.99em) {
+  :root { --vel-h1: clamp(4rem, 7.4vw, 5.25rem); }
+  .uvod__obsah { grid-column: 1 / span 7; }
+  .okno { grid-column: 8 / span 5; }
+}
+
 /* Úvodní okamžik při načtení: linka se dokreslí, věty nadpisu vyjedou */
 @media (prefers-reduced-motion: no-preference) {
   .uvod__linky svg { animation: dokresli 2.4s cubic-bezier(0.6, 0.05, 0.25, 1) 0.15s both; }
@@ -533,6 +548,7 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.22e
    O DSTUDIO
    ========================================================================== */
 .o-nas { z-index: 2; }
+.spolu { white-space: nowrap; }
 .o-nas__heslo { padding-top: 1.125rem; position: relative; }
 .o-nas__heslo::before {
   content: ""; position: absolute; left: 0; top: 0; width: 2.75rem; height: 1px; background: var(--beige);
@@ -737,7 +753,6 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.22e
 /* ==========================================================================
    Ceník
    ========================================================================== */
-.cenik { scroll-margin-top: var(--hlavicka-v); }
 .cenik__obal { overflow: clip; padding-top: clamp(4rem, 9vw, 7.5rem); }
 .cenik__obal-vnitrek { position: relative; z-index: 1; display: grid; gap: 1.5rem var(--zlab); }
 .cenik__titul {
@@ -806,7 +821,7 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.22e
   display: flex; flex-direction: column;
   padding-block: clamp(2.5rem, 6vw, 4rem) 1.5rem;
   border-bottom: 1px solid var(--beige);
-  scroll-margin-top: calc(var(--hlavicka-v) + 5rem);
+  scroll-margin-top: 4.5rem;
 }
 .cenik-list__stitek { font-size: 0.6875rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; }
 .cenik-list__nazev { margin-top: 0.875rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--beige); font-size: clamp(2rem, 1.5rem + 2vw, 2.75rem); line-height: 1.06; letter-spacing: -0.01em; }
@@ -843,7 +858,7 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.22e
 [data-uroven="senior"] .cenik-tabulka [data-uroven]:not([data-uroven="senior"]),
 [data-uroven="top"] .cenik-tabulka [data-uroven]:not([data-uroven="top"]) { display: none; }
 .cenik__strany:not([data-uroven="vse"]) .cena__mena, .cenik-tabulka--jedna .cena__mena { display: inline; }
-.cenik__strany:not([data-uroven="vse"]) .cenik-tabulka td { width: 7em; }
+.cenik__strany:not([data-uroven="vse"]) .cenik-tabulka td { width: 5.6em; }
 .cenik__strany:not([data-uroven="vse"]) .cenik-tabulka thead { display: none; }
 [data-uroven="middle"] .cenik-tabulka__poznamka[data-chybi~="middle"],
 [data-uroven="senior"] .cenik-tabulka__poznamka[data-chybi~="senior"],
@@ -917,7 +932,7 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.22e
 .cedule__sloupec p.cedule__mensi { font-size: var(--vel-s); margin-bottom: 0.5rem; }
 .cedule__sloupec a { text-decoration: none; display: inline-block; padding-block: 0.625rem; margin-block: -0.25rem; }
 .cedule__sloupec a:hover { text-decoration: underline; text-decoration-thickness: 1px; }
-@media (min-width: 47.5em) {
+@media (min-width: 56.25em) {
   .cedule { grid-template-columns: repeat(3, minmax(0, 1fr)); padding-block: clamp(1.5rem, 3vw, 2.5rem); }
   .cedule__sloupec { padding: 0.5rem clamp(1.25rem, 3vw, 3rem); }
   .cedule__sloupec:first-child { padding-left: 0; }
@@ -926,7 +941,7 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.22e
 }
 
 /* Cesta do dvora */
-.cesta { margin-top: clamp(3.5rem, 8vw, 6rem); scroll-margin-top: calc(var(--hlavicka-v) + 1.5rem); align-items: start; }
+.cesta { margin-top: clamp(3.5rem, 8vw, 6rem); scroll-margin-top: 0.5rem; align-items: start; }
 .cesta__kroky { margin-top: 1.5rem; counter-reset: krok; border-top: 1px solid var(--beige); }
 .cesta__kroky li {
   counter-increment: krok;
@@ -1030,6 +1045,12 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.22e
 .lista-rezervace__text { font-size: 0.6875rem; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; line-height: 1.4; }
 .lista-rezervace .tlacitko { min-height: 2.75rem; padding-block: 0.5rem; }
 @media (min-width: 60em) { .lista-rezervace { display: none !important; } }
+/* Nejužší displeje: lišta jen s tlačítkem, štítek úvodu na jeden řádek */
+@media (max-width: 22.49em) {
+  .lista-rezervace__text { display: none; }
+  .lista-rezervace .tlacitko { width: 100%; }
+  .uvod__stitek { font-size: 0.6875rem; letter-spacing: 0.14em; }
+}
 
 /* ==========================================================================
    Souhlas s cookies
@@ -1125,27 +1146,29 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.22e
    Tisk: vytiskne se jen ceník, všechny tři úrovně vedle sebe
    ========================================================================== */
 @media print {
-  @page { margin: 14mm 14mm 16mm; }
+  @page { size: A4; margin: 12mm 13mm 12mm; }
   html, body { background: #fff !important; }
-  body { font-size: 9.5pt; line-height: 1.4; }
+  body { font-size: 8.6pt; line-height: 1.35; }
   .hlavicka, .pata, .lista-rezervace, .souhlas, .preskocit, .cenik__obal, .cenik__lista, .cenik__akce,
   main > section:not(.cenik), .linky { display: none !important; }
   .cenik__strany { background: none !important; padding: 0; }
   .obal { width: 100%; }
-  .cenik__tisk-hlava { display: flex; align-items: flex-end; justify-content: space-between; gap: 12mm; padding-bottom: 5mm; margin-bottom: 2mm; border-bottom: 0.5pt solid var(--chocolate); }
-  .cenik__tisk-hlava img { height: 11mm; width: auto; }
+  .cenik__tisk-hlava { display: flex; align-items: flex-end; justify-content: space-between; gap: 12mm; padding-bottom: 4mm; margin-bottom: 5mm; border-bottom: 0.5pt solid var(--chocolate); }
+  .cenik__tisk-hlava img { height: 9mm; width: auto; }
   .cenik__tisk-hlava p { font-size: 8pt; text-align: right; }
-  .cenik__listy { display: grid; grid-template-columns: 1fr 1fr; column-gap: 10mm; }
-  .cenik-list { padding: 6mm 0 3mm !important; border-right: 0 !important; break-inside: avoid; }
-  .cenik-list:nth-child(1) { grid-column: 1; grid-row: 1 / span 2; }
-  .cenik-list:nth-child(2) { grid-column: 2; grid-row: 1; }
-  .cenik-list:nth-child(3) { grid-column: 2; grid-row: 2; }
-  .cenik-list:nth-child(4) { grid-column: 1 / -1; }
-  .cenik-list:nth-child(4) .cenik-list__tabulky { grid-template-columns: repeat(3, 1fr); gap: 8mm; }
-  .cenik-list__nazev { font-size: 20pt; padding-bottom: 3mm; margin-top: 2mm; }
-  .cenik-list__tabulky { gap: 5mm; margin-top: 4mm; margin-bottom: 4mm; }
-  .cenik-tabulka caption { font-size: 14pt; }
-  .cenik-tabulka th, .cenik-tabulka td { padding: 1.6mm 0; }
+  .cenik__listy { display: block; columns: 2; column-gap: 10mm; }
+  .cenik-list { display: block; padding: 0 0 7mm !important; border: 0 !important; break-inside: avoid; }
+  .cenik-list:nth-child(4) .cenik-list__tabulky { display: grid; grid-template-columns: 1fr; gap: 5mm; }
+  .cenik-list__zaver { padding-bottom: 3mm; }
+  .cenik-list__zaver-nadpis { font-size: 13pt; }
+  .cenik-list__zaver p + p { font-size: 8pt; }
+  .cenik-list__motto { font-size: 13pt; margin-top: 3mm; }
+  .cenik-list__nazev { font-size: 17pt; padding-bottom: 2mm; margin-top: 1.5mm; }
+  .cenik-list__tabulky { gap: 4mm; margin-top: 3mm; margin-bottom: 3mm; }
+  .cenik-tabulka caption { font-size: 12.5pt; padding-bottom: 0; }
+  .cenik-tabulka th, .cenik-tabulka td { padding: 1.15mm 0; }
+  .cenik-tabulka thead th { padding-block: 0.6mm; font-size: 7.5pt; }
+  .cenik-list__stitek, .cenik-list__pata { font-size: 6.5pt; }
   .cenik-tabulka [data-uroven] { display: table-cell !important; }
   .cenik-tabulka .mimo { display: none !important; }
   .cenik-tabulka thead { display: table-header-group !important; }

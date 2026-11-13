@@ -97,7 +97,7 @@
     </a>
     <nav class="navigace" id="navigace" aria-label="Hlavní navigace">
       <ul class="navigace__seznam">
-        <li><a href="#o-nas">O nás</a></li>
+        <li><a href="#o-nas">O&nbsp;nás</a></li>
         <li><a href="#sluzby">Služby</a></li>
         <li><a href="#cenik">Ceník</a></li>
         <li><a href="#prace">Práce</a></li>
@@ -121,6 +121,7 @@
 
   <!-- ÚVOD: vrstvy se při scrollu posouvají různou rychlostí (příchod z ulice do dvora) -->
   <section class="uvod plocha plocha--bila" id="uvod" data-parallax-layers="uvod" aria-labelledby="uvod-nadpis">
+    <div class="uvod__vyrez">
     <div class="uvod__linky" data-parallax-layer="1" aria-hidden="true">
       <svg viewBox="0 0 1440 800" preserveAspectRatio="none" focusable="false">
         <path d="M-20 742 C 300 752, 560 716, 800 560 S 1130 150, 1460 228"/>
@@ -170,11 +171,13 @@
       </div>
     </div>
 
+    </div>
+
     <!-- Práh: pruh v popředí, za který se úvod při scrollu zasouvá -->
     <div class="uvod__prah" data-parallax-layer="4">
       <div class="obal uvod__prah-vnitrek">
         <p><span class="uvod__prah-stitek">Kde</span> <a href="#cesta">Milady Horákové 398/30, Praha&nbsp;7 · ve dvoře</a></p>
-        <p><span class="uvod__prah-stitek">Kdy</span> Po–Pá 9:00–19:00 · So–Ne pouze na objednání</p>
+        <p><span class="uvod__prah-stitek">Kdy</span> <span><span class="spolu">Po–Pá 9:00–19:00</span> · So–Ne pouze na objednání</span></p>
         <p><span class="uvod__prah-stitek">Telefon</span> <a href="tel:+420773706196">+420&nbsp;773&nbsp;706&nbsp;196</a></p>
       </div>
     </div>
@@ -189,7 +192,7 @@
     </div>
     <div class="obal mrizka">
       <header class="o-nas__hlava" data-parallax-layer="3">
-        <p class="stitek">O DSTUDIO</p>
+        <p class="stitek">O&nbsp;DSTUDIO</p>
         <h2 class="nadpis-2" id="o-nas-nadpis">Chvíle pro sebe</h2>
       </header>
       <div class="o-nas__text text odhal">
@@ -429,7 +432,7 @@
         <div class="cenik__listy" data-cenik-listy aria-live="polite">
           <p class="cenik__nacitani" data-cenik-stav>Načítáme ceník…</p>
         </div>
-        <noscript><p class="bez-skriptu">Ceník se načítá skriptem. Aktuální ceny najdete také v rezervačním systému <a href="https://noona.app/dstudio" target="_blank" rel="noopener">Noona</a>.</p></noscript>
+        <noscript><p class="bez-skriptu">Ceník se načítá skriptem. Aktuální ceny najdete také v&nbsp;rezervačním systému <a href="https://noona.app/dstudio" target="_blank" rel="noopener">Noona</a>.</p></noscript>
         <div class="cenik__paticka">
           <ul class="cenik__poznamky" data-cenik-poznamky></ul>
           <div class="cenik__akce">
@@ -484,7 +487,7 @@
         </div>
         <div class="cedule__sloupec">
           <h3 class="cedule__stitek">Otevírací doba</h3>
-          <p>Po–Pá&nbsp;&nbsp;9:00–19:00</p>
+          <p><span class="spolu">Po–Pá&nbsp;&nbsp;9:00–19:00</span></p>
           <p class="cedule__mensi">So–Ne pouze na objednání</p>
         </div>
         <div class="cedule__sloupec">
@@ -599,7 +602,7 @@
       </div>
       <div class="pata__sloupec">
         <h2 class="pata__stitek">Otevírací doba</h2>
-        <p>Po–Pá&nbsp;&nbsp;9:00–19:00<br>So–Ne pouze na objednání</p>
+        <p><span class="spolu">Po–Pá&nbsp;&nbsp;9:00–19:00</span><br>So–Ne pouze na objednání</p>
         <p><a href="https://noona.app/dstudio" target="_blank" rel="noopener">Rezervace přes Noona<span class="skryte"> (otevře se v novém okně)</span></a></p>
       </div>
       <div class="pata__sloupec">
@@ -625,7 +628,7 @@
 
 <!-- Lišta s rezervací pro mobil -->
 <aside class="lista-rezervace" aria-label="Rychlá rezervace" data-lista-rezervace hidden>
-  <p class="lista-rezervace__text">Po–Pá 9:00–19:00</p>
+  <p class="lista-rezervace__text"><span class="spolu">Po–Pá 9:00–19:00</span></p>
   <a class="tlacitko tlacitko--primarni" href="https://noona.app/dstudio" target="_blank" rel="noopener">Rezervovat online<span class="skryte"> (otevře se v novém okně)</span></a>
 </aside>
 
