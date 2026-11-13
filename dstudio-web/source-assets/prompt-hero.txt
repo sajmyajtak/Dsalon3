@@ -1,0 +1,16 @@
+Připravený prompt pro atmosférický vizuál (nepoužito, generace neproběhla – viz docs/generace.md).
+Formát 4:5, vysoká kvalita, bez referenčních obrázků. Obrázek smí sloužit jen jako atmosféra,
+nikdy jako ukázka práce, týmu nebo interiéru salonu.
+
+Editorial interior still-life photograph, vertical 4:5 format. A calm corner beside a window, lit only by soft,
+diffused natural daylight coming from the left. In the lower third of the frame, on a matte warm-beige limewash
+plaster ledge: on the right side a neatly folded stack of washed natural linen cloths in cream and oat tones with
+a small handmade matte ceramic bowl in deep chocolate brown beside it; on the left side one slender vase of deep
+emerald-green frosted glass holding a single thin dried grass stem. The upper two thirds of the frame are calm
+negative space: a plain matte plaster wall in warm milky beige with a very soft, out-of-focus shadow of a window
+frame falling diagonally across it. Colour palette strictly limited to white, cream, warm beige and deep chocolate
+brown, with the emerald vase as the only accent colour. All surfaces matte, no gloss, no specular highlights, no
+reflections. Natural warm white balance, no yellow or orange filter, no green or grey cast. Medium-format
+photograph, 80 mm lens, f/5.6, straight-on eye-level view, subtle natural film grain, true-to-life texture of linen
+weave, ceramic and plaster. No people, no hands, no text, no letters, no logos, no labels, no cosmetics, no candles,
+no flowers.

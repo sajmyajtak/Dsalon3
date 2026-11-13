@@ -1,0 +1,13 @@
+{
+  "name": "DSTUDIO | Beauty Salon",
+  "short_name": "DSTUDIO",
+  "lang": "cs",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#F4EFEA",
+  "theme_color": "#2B1E1A",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

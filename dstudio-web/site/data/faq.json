@@ -1,0 +1,58 @@
+{
+  "_navod": "Časté otázky. \"odpoved\" je pole odstavců. Odkaz se zapisuje jako [text odkazu](adresa). Adresa může být kotva na stránce (#cenik), telefon (tel:+420773706196) nebo https odkaz. Uvádějte jen informace, které opravdu platí.",
+  "polozky": [
+    {
+      "otazka": "Jak se objednám?",
+      "odpoved": [
+        "Online přes rezervační systém Noona. Vyberete si službu, specialistku a volný termín: [rezervovat online](https://noona.app/dstudio).",
+        "Zavolat nebo napsat nám můžete také na číslo [+420 773 706 196](tel:+420773706196), přijímáme volání i zprávy v messengerech."
+      ]
+    },
+    {
+      "otazka": "Co znamenají úrovně Middle, Senior a Top?",
+      "odpoved": [
+        "Naše specialistky pracují ve třech úrovních: Middle, Senior a Top. Podle úrovně se liší cena služby, proto u manikúry, modeláže a designu nehtů najdete v ceníku tři ceny.",
+        "Úroveň si vyberete při rezervaci. S výběrem služby i specialistky vám rádi pomůžeme.",
+        "Pedikúru nabízíme v úrovních Middle a Top. Obočí, řasy a líčení mají jednu cenu."
+      ]
+    },
+    {
+      "otazka": "Kolik to stojí?",
+      "odpoved": [
+        "Ceny všech služeb najdete v [ceníku](#cenik). U služeb pro nehty závisí cena na úrovni specialistky, u designu nehtů také na jeho rozsahu.",
+        "Vaše přání i cenu s vámi domluvíme před začátkem procedury."
+      ]
+    },
+    {
+      "otazka": "Kde vás najdu?",
+      "odpoved": [
+        "Na adrese Milady Horákové 398/30, Praha 7 – Holešovice. Salon je ve dvoře: z ulice projdete do dvora a vchod máte vlevo. Cestu ukazuje cedule „Vchod vlevo · Salon ve dvoře“.",
+        "Trasu najdete v části [Jak se k nám dostanete](#cesta)."
+      ]
+    },
+    {
+      "otazka": "Kdy máte otevřeno?",
+      "odpoved": [
+        "Od pondělí do pátku 9:00–19:00. V sobotu a v neděli pouze na objednání."
+      ]
+    },
+    {
+      "otazka": "Mohu přijít s vlastní představou?",
+      "odpoved": [
+        "Určitě. Přijďte s vlastní představou, nebo ji společně s námi objevte. Nasloucháme vám a pomůžeme vybrat to, co vám bude slušet."
+      ]
+    },
+    {
+      "otazka": "Nabízíte také pánskou manikúru a pedikúru?",
+      "odpoved": [
+        "Ano, pánskou manikúru i pánskou pedikúru najdete v [ceníku](#cenik) v části Manikúra & pedikúra."
+      ]
+    },
+    {
+      "otazka": "Nabízíte prodlužování řas?",
+      "odpoved": [
+        "Aktuálně nabízíme laminaci a barvení řas."
+      ]
+    }
+  ]
+}

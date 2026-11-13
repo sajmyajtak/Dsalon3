@@ -1,0 +1,164 @@
+{
+  "_navod": "Jediné místo, kde se upravují ceny. Cena je číslo (790), rozpětí [od, do] (např. [30, 250]) nebo null = služba není v nabídce dané úrovně (na webu se zobrazí pomlčka). Tabulka bez klíče \"urovne\" má jednu cenu (klíč \"cena\"). Po úpravě stačí soubor uložit a nahrát, stránka si ceny načte sama. Klíč \"zaver\" u skupiny je krátký text na konci listu.",
+  "zdroj": "Brand book DSTUDIO 2.0, ceník služeb (strany 14, 15 a 20)",
+  "mena": "Kč",
+  "urovne": [
+    { "id": "middle", "nazev": "Middle" },
+    { "id": "senior", "nazev": "Senior" },
+    { "id": "top", "nazev": "Top" }
+  ],
+  "poznamky": {
+    "mena": "Všechny ceny v Kč",
+    "rozpeti": "Rozpětí ceny závisí na rozsahu designu.",
+    "pomlcka": "— služba není v nabídce dané úrovně."
+  },
+  "skupiny": [
+    {
+      "id": "nail-care",
+      "cislo": "01",
+      "stitek": "Nail care",
+      "nazev": "Manikúra & pedikúra",
+      "tabulky": [
+        {
+          "id": "manikura",
+          "nazev": "Manikúra",
+          "urovne": ["middle", "senior", "top"],
+          "polozky": [
+            { "nazev": "Manikúra", "ceny": { "middle": 790, "senior": 890, "top": 990 } },
+            { "nazev": "P-Shine", "ceny": { "middle": 890, "senior": 990, "top": 1090 } },
+            { "nazev": "Manikúra + klasický lak", "ceny": { "middle": 890, "senior": 990, "top": 1090 } },
+            { "nazev": "Manikúra + gel lak S", "ceny": { "middle": 990, "senior": 1090, "top": 1290 } },
+            { "nazev": "Manikúra + gel lak M", "ceny": { "middle": 1090, "senior": 1190, "top": 1390 } },
+            { "nazev": "Manikúra + gel lak L", "ceny": { "middle": 1190, "senior": 1290, "top": 1490 } },
+            { "nazev": "Pánská manikúra", "ceny": { "middle": 890, "senior": 990, "top": 1090 } },
+            { "nazev": "Odstranění bez lakování", "ceny": { "middle": 200, "senior": 200, "top": 200 } },
+            { "nazev": "Oprava 1 nehtu", "ceny": { "middle": 50, "senior": 50, "top": 50 } },
+            { "nazev": "Prodloužení 1 nehtu", "ceny": { "middle": 100, "senior": 150, "top": 150 } },
+            { "nazev": "Zkrácení nehtů", "ceny": { "middle": null, "senior": 100, "top": null } }
+          ]
+        },
+        {
+          "id": "pedikura",
+          "nazev": "Pedikúra",
+          "urovne": ["middle", "top"],
+          "polozky": [
+            { "nazev": "Pedikúra", "ceny": { "middle": 890, "top": 990 } },
+            { "nazev": "Prsty", "ceny": { "middle": 740, "top": 840 } },
+            { "nazev": "Prsty + klasický lak", "ceny": { "middle": 890, "top": 990 } },
+            { "nazev": "Prsty + gel lak", "ceny": { "middle": 990, "top": 1090 } },
+            { "nazev": "Pedikúra + klasický lak", "ceny": { "middle": 990, "top": 1090 } },
+            { "nazev": "Pedikúra + gel lak", "ceny": { "middle": 1090, "top": 1190 } },
+            { "nazev": "Paty", "ceny": { "middle": 290, "top": 390 } },
+            { "nazev": "Pánská pedikúra", "ceny": { "middle": 990, "top": 1090 } }
+          ]
+        }
+      ],
+      "zaver": {
+        "nadpis": "Middle · Senior · Top",
+        "text": "Tři úrovně specialistů. Vyberte si tu svou při rezervaci."
+      }
+    },
+    {
+      "id": "gel-nails",
+      "cislo": "02",
+      "stitek": "Gel nails",
+      "nazev": "Modeláž nehtů",
+      "motto": "Váš styl. Vaše délka.",
+      "tabulky": [
+        {
+          "id": "gelove-prodlouzeni",
+          "nazev": "Gelové prodloužení",
+          "urovne": ["middle", "senior", "top"],
+          "polozky": [
+            { "nazev": "Délka 1", "ceny": { "middle": 1190, "senior": 1290, "top": 1390 } },
+            { "nazev": "Délka 2", "ceny": { "middle": 1290, "senior": 1390, "top": 1490 } },
+            { "nazev": "Délka 3", "ceny": { "middle": 1390, "senior": 1490, "top": 1590 } },
+            { "nazev": "Délka 4", "ceny": { "middle": 1490, "senior": 1690, "top": 1790 } },
+            { "nazev": "Délka více než 5", "ceny": { "middle": 1690, "senior": 1890, "top": 2090 } }
+          ]
+        },
+        {
+          "id": "doplneni-gelu",
+          "nazev": "Doplnění gelu",
+          "urovne": ["middle", "senior", "top"],
+          "polozky": [
+            { "nazev": "Délka 1", "ceny": { "middle": 1090, "senior": 1190, "top": 1290 } },
+            { "nazev": "Délka 2", "ceny": { "middle": 1190, "senior": 1290, "top": 1390 } },
+            { "nazev": "Délka 3", "ceny": { "middle": 1290, "senior": 1390, "top": 1490 } },
+            { "nazev": "Délka 4", "ceny": { "middle": 1390, "senior": 1590, "top": 1690 } },
+            { "nazev": "Délka více než 5", "ceny": { "middle": 1690, "senior": 1890, "top": 2090 } }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nail-art",
+      "cislo": "03",
+      "stitek": "Nail art",
+      "nazev": "Design nehtů",
+      "motto": "Detaily, které tvoří celek",
+      "poznamka": "rozpeti",
+      "tabulky": [
+        {
+          "id": "design",
+          "nazev": "Design",
+          "urovne": ["middle", "senior", "top"],
+          "polozky": [
+            { "nazev": "Ruční design", "ceny": { "middle": 25, "senior": [30, 250], "top": [45, 400] } },
+            { "nazev": "Francouzská manikúra", "ceny": { "middle": 200, "senior": 250, "top": 300 } },
+            { "nazev": "Klasické ombre", "ceny": { "middle": [25, 200], "senior": [35, 300], "top": [35, 300] } },
+            { "nazev": "Složité ombre", "ceny": { "middle": null, "senior": [40, 350], "top": 450 } },
+            { "nazev": "Kamínky", "ceny": { "middle": 10, "senior": 10, "top": 10 } },
+            { "nazev": "Cat eye", "ceny": { "middle": [20, 150], "senior": [25, 200], "top": [25, 300] } },
+            { "nazev": "Fólie", "ceny": { "middle": 20, "senior": 20, "top": 20 } },
+            { "nazev": "Perlový efekt", "ceny": { "middle": [25, 200], "senior": [30, 250], "top": [35, 300] } },
+            { "nazev": "Stamping / nálepka", "ceny": { "middle": [30, 250], "senior": [35, 300], "top": [35, 300] } }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "beauty",
+      "cislo": "04",
+      "stitek": "Beauty",
+      "nazev": "Obočí, řasy & líčení",
+      "tabulky": [
+        {
+          "id": "oboci",
+          "nazev": "Obočí",
+          "polozky": [
+            { "nazev": "Úprava obočí", "cena": 350 },
+            { "nazev": "Barvení obočí", "cena": 350 },
+            { "nazev": "Úprava + barvení", "cena": 590 },
+            { "nazev": "Laminace obočí", "cena": 690 },
+            { "nazev": "Laminace + úprava nebo barvení", "cena": 790 },
+            { "nazev": "Laminace + úprava + barvení", "cena": 990 },
+            { "nazev": "Odbarvení obočí", "cena": 690 },
+            { "nazev": "Proředění obočí", "cena": 290 },
+            { "nazev": "Depilace nad horním rtem", "cena": 100 }
+          ]
+        },
+        {
+          "id": "rasy",
+          "nazev": "Řasy",
+          "polozky": [
+            { "nazev": "Laminace řas", "cena": 950 },
+            { "nazev": "Barvení řas", "cena": 300 },
+            { "nazev": "Laminace + barvení řas", "cena": 1250 }
+          ]
+        },
+        {
+          "id": "liceni",
+          "nazev": "Líčení",
+          "polozky": [
+            { "nazev": "Expresní líčení", "cena": 1090 },
+            { "nazev": "Denní líčení", "cena": 1190 },
+            { "nazev": "Večerní líčení", "cena": 1390 },
+            { "nazev": "Svatební líčení", "cena": 1790 },
+            { "nazev": "Zkouška svatebního líčení", "cena": 1190 }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,663 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DSTUDIO | Beauty Salon – manikúra, pedikúra, obočí, řasy a líčení na Praze 7</title>
+<meta name="description" content="DSTUDIO je salon krásy na Praze 7, ve dvoře na Milady Horákové 398/30. Manikúra, pedikúra, obočí, řasy a líčení. Ceník služeb a online rezervace přes Noona.">
+<link rel="canonical" href="https://dstudio.example/">
+<meta name="theme-color" content="#2B1E1A">
+
+<link rel="preload" href="/assets/fonts/cormorant-garamond-300.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/styl.css">
+<noscript><link rel="stylesheet" href="/assets/css/bez-skriptu.css"></noscript>
+
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="cs_CZ">
+<meta property="og:site_name" content="DSTUDIO | Beauty Salon">
+<meta property="og:title" content="DSTUDIO | Beauty Salon – Praha 7">
+<meta property="og:description" content="Krása je v detailech. Péče v přístupu. Manikúra, pedikúra, obočí, řasy a líčení ve dvoře na Milady Horákové 398/30.">
+<meta property="og:url" content="https://dstudio.example/">
+<meta property="og:image" content="https://dstudio.example/assets/img/og-dstudio.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Logo DSTUDIO Beauty Salon na krémovém podkladu">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "name": "DSTUDIO | Beauty Salon",
+  "legalName": "D. Y. Beauty s.r.o.",
+  "identifier": { "@type": "PropertyValue", "propertyID": "IČO", "value": "17419221" },
+  "url": "https://dstudio.example/",
+  "image": "https://dstudio.example/assets/img/og-dstudio.png",
+  "logo": "https://dstudio.example/assets/svg/dstudio-logo-chocolate.svg",
+  "telephone": "+420773706196",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Milady Horákové 398/30",
+    "postalCode": "170 00",
+    "addressLocality": "Praha 7 – Holešovice",
+    "addressCountry": "CZ"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "19:00"
+    }
+  ],
+  "sameAs": ["https://www.instagram.com/dstudio_cz/"],
+  "potentialAction": {
+    "@type": "ReserveAction",
+    "target": "https://noona.app/dstudio"
+  }
+}
+</script>
+
+<script src="/assets/js/main.js" defer></script>
+<script src="/assets/js/souhlas.js" defer></script>
+</head>
+<body>
+
+<a class="preskocit" href="#obsah">Přeskočit na obsah</a>
+
+<!-- Sdílené kresby: linky z okenní fólie a šipka z cedule -->
+<svg class="zasobnik" aria-hidden="true" focusable="false">
+  <symbol id="linky-fasada" viewBox="0 0 1000 400" preserveAspectRatio="none">
+    <path d="M-10 318 C 150 300, 250 118, 420 96 S 700 250, 1010 62"/>
+    <path d="M-10 92 C 170 120, 300 300, 520 286 S 820 150, 1010 300"/>
+    <path d="M-10 212 C 240 236, 420 180, 600 196 S 880 380, 1010 352"/>
+  </symbol>
+  <symbol id="linky-okno" viewBox="0 0 400 480" preserveAspectRatio="none">
+    <path d="M-10 318 C 96 306, 168 196, 250 208 S 352 300, 410 176"/>
+    <path d="M-10 150 C 118 172, 190 330, 300 306 S 372 246, 410 268"/>
+  </symbol>
+  <symbol id="sipka" viewBox="0 0 30 12">
+    <path d="M0 6h28M22.5 1 28 6l-5.5 5"/>
+  </symbol>
+  <symbol id="sipka-vlevo" viewBox="0 0 44 28">
+    <path d="M43 14H2M14 2 2 14l12 12"/>
+  </symbol>
+</svg>
+
+<header class="hlavicka" data-hlavicka>
+  <div class="hlavicka__vnitrek">
+    <a class="hlavicka__logo" href="/" aria-label="DSTUDIO | Beauty Salon, úvodní stránka">
+      <img src="/assets/svg/dstudio-logo-chocolate.svg" width="140" height="36" alt="DSTUDIO Beauty Salon">
+    </a>
+    <nav class="navigace" id="navigace" aria-label="Hlavní navigace">
+      <ul class="navigace__seznam">
+        <li><a href="#o-nas">O nás</a></li>
+        <li><a href="#sluzby">Služby</a></li>
+        <li><a href="#cenik">Ceník</a></li>
+        <li><a href="#prace">Práce</a></li>
+        <li><a href="#tym">Tým</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+      <div class="navigace__dole">
+        <a class="tlacitko tlacitko--svetle" href="https://noona.app/dstudio" target="_blank" rel="noopener">Rezervovat online<svg class="sipka" aria-hidden="true"><use href="#sipka"/></svg><span class="skryte"> (otevře se v novém okně)</span></a>
+        <a class="navigace__telefon" href="tel:+420773706196">+420&nbsp;773&nbsp;706&nbsp;196</a>
+      </div>
+    </nav>
+    <a class="tlacitko tlacitko--primarni hlavicka__rezervace" href="https://noona.app/dstudio" target="_blank" rel="noopener">Rezervovat<span class="skryte"> online (otevře se v novém okně)</span></a>
+    <button class="hlavicka__menu" type="button" aria-expanded="false" aria-controls="navigace" data-menu hidden>
+      <span class="hlavicka__menu-napis" data-menu-napis>Menu</span>
+      <span class="hlavicka__menu-znak" aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+
+<main id="obsah">
+
+  <!-- ÚVOD: vrstvy se při scrollu posouvají různou rychlostí (příchod z ulice do dvora) -->
+  <section class="uvod plocha plocha--bila" id="uvod" data-parallax-layers="uvod" aria-labelledby="uvod-nadpis">
+    <div class="uvod__linky" data-parallax-layer="1" aria-hidden="true">
+      <svg viewBox="0 0 1440 800" preserveAspectRatio="none" focusable="false">
+        <path d="M-20 742 C 300 752, 560 716, 800 560 S 1130 150, 1460 228"/>
+        <path d="M-20 664 C 250 700, 610 820, 900 640 S 1250 330, 1460 452"/>
+      </svg>
+    </div>
+
+    <div class="obal uvod__scena">
+      <div class="uvod__obsah" data-parallax-layer="3">
+        <p class="stitek uvod__stitek">Salon krásy · Praha 7 · ve dvoře</p>
+        <h1 class="uvod__nadpis" id="uvod-nadpis">
+          <span class="uvod__veta">Krása je v&nbsp;detailech.</span>
+          <span class="uvod__veta uvod__veta--druha">Péče v&nbsp;přístupu.</span>
+        </h1>
+        <p class="uvod__podtext">DSTUDIO&nbsp;— salon krásy na Praze&nbsp;7, kde věnujeme pozornost vašim přáním i&nbsp;každému detailu výsledku.</p>
+        <p class="uvod__sluzby">Manikúra · Pedikúra · Obočí<span class="uvod__sluzby-tecka"> · </span><br class="uvod__sluzby-zalom">Řasy · Líčení</p>
+        <div class="uvod__tlacitka">
+          <a class="tlacitko tlacitko--primarni" href="https://noona.app/dstudio" target="_blank" rel="noopener">Rezervovat online<svg class="sipka" aria-hidden="true"><use href="#sipka"/></svg><span class="skryte"> (otevře se v novém okně)</span></a>
+          <a class="odkaz-sipka" href="#prace">Prohlédnout naše práce<svg class="sipka" aria-hidden="true"><use href="#sipka"/></svg></a>
+        </div>
+      </div>
+
+      <!-- Okno 1: stejně jako ve výloze salonu, vlevo služby, vpravo rezervace -->
+      <div class="okno" data-parallax-layer="2">
+        <div class="okno__tabule okno__tabule--sluzby">
+          <svg class="okno__linky" aria-hidden="true" focusable="false"><use href="#linky-okno"/></svg>
+          <nav aria-label="Služby">
+            <ul class="okno__seznam">
+              <li><a href="#sluzba-manikura" data-okno-odkaz="manikura">Manikúra</a></li>
+              <li><a href="#sluzba-pedikura" data-okno-odkaz="pedikura">Pedikúra</a></li>
+              <li><a href="#sluzba-oboci" data-okno-odkaz="oboci">Obočí</a></li>
+              <li><a href="#sluzba-rasy" data-okno-odkaz="rasy">Řasy</a></li>
+              <li><a href="#sluzba-liceni" data-okno-odkaz="liceni">Líčení</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="okno__tabule okno__tabule--rezervace">
+          <svg class="okno__linky" aria-hidden="true" focusable="false"><use href="#linky-okno"/></svg>
+          <p class="okno__napis">Rezervace<br>online</p>
+          <a class="okno__qr" href="https://noona.app/dstudio" target="_blank" rel="noopener">
+            <img src="/assets/svg/qr-noona.svg" width="116" height="116" alt="QR kód: online rezervace DSTUDIO v Noona" loading="lazy" decoding="async">
+            <span class="okno__adresa">noona.app/dstudio</span>
+            <span class="skryte"> (otevře se v novém okně)</span>
+          </a>
+          <a class="okno__instagram" href="https://www.instagram.com/dstudio_cz/" target="_blank" rel="noopener">@dstudio_cz<span class="skryte"> na Instagramu (otevře se v novém okně)</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Práh: pruh v popředí, za který se úvod při scrollu zasouvá -->
+    <div class="uvod__prah" data-parallax-layer="4">
+      <div class="obal uvod__prah-vnitrek">
+        <p><span class="uvod__prah-stitek">Kde</span> <a href="#cesta">Milady Horákové 398/30, Praha&nbsp;7 · ve dvoře</a></p>
+        <p><span class="uvod__prah-stitek">Kdy</span> Po–Pá 9:00–19:00 · So–Ne pouze na objednání</p>
+        <p><span class="uvod__prah-stitek">Telefon</span> <a href="tel:+420773706196">+420&nbsp;773&nbsp;706&nbsp;196</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- O DSTUDIO -->
+  <section class="sekce o-nas plocha plocha--cokolada" id="o-nas" data-parallax-layers aria-labelledby="o-nas-nadpis">
+    <div class="linky linky--zlab" data-parallax-layer="1" aria-hidden="true">
+      <svg viewBox="0 0 1440 800" preserveAspectRatio="none" focusable="false">
+        <path d="M 690 -40 C 630 150, 596 300, 648 450 S 668 690, 610 840"/>
+      </svg>
+    </div>
+    <div class="obal mrizka">
+      <header class="o-nas__hlava" data-parallax-layer="3">
+        <p class="stitek">O DSTUDIO</p>
+        <h2 class="nadpis-2" id="o-nas-nadpis">Chvíle pro sebe</h2>
+      </header>
+      <div class="o-nas__text text odhal">
+        <p class="text__uvodni">Někdy ke krásnějšímu dni stačí čerstvá manikúra, zvýrazněný pohled nebo líčení pro výjimečnou příležitost.</p>
+        <p>V&nbsp;DSTUDIO spojujeme pečlivou práci s&nbsp;milým a&nbsp;pozorným přístupem. Vyslechneme vaše přání, pomůžeme vám s&nbsp;výběrem a&nbsp;postaráme se, abyste se u&nbsp;nás cítili příjemně po celou dobu návštěvy.</p>
+        <p>Záleží nám na tom, aby výsledek ladil právě s&nbsp;vámi&nbsp;— s&nbsp;vaším stylem, náladou i&nbsp;životním rytmem.</p>
+      </div>
+      <p class="heslo o-nas__heslo" data-parallax-layer="2">Čas pro vás.<span>S&nbsp;péčí a&nbsp;láskou.</span></p>
+    </div>
+  </section>
+
+  <!-- NAŠE FILOZOFIE -->
+  <section class="sekce filozofie plocha plocha--bila" id="filozofie" data-parallax-layers aria-labelledby="filozofie-nadpis">
+    <div class="linky" data-parallax-layer="1" aria-hidden="true">
+      <svg viewBox="0 0 1440 700" preserveAspectRatio="none" focusable="false">
+        <path d="M-20 260 C 280 320, 520 80, 800 150 S 1200 560, 1460 480"/>
+        <path d="M-20 520 C 240 460, 600 640, 920 560 S 1280 200, 1460 180"/>
+      </svg>
+    </div>
+    <div class="obal">
+      <p class="stitek">Naše filozofie</p>
+      <h2 class="filozofie__vyrok" id="filozofie-nadpis">
+        <span class="filozofie__radek" data-parallax-layer="3">Naslouchat vám.</span>
+        <span class="filozofie__radek filozofie__radek--druhy" data-parallax-layer="2">Pečovat o&nbsp;detaily.</span>
+      </h2>
+      <p class="filozofie__text odhal">Každý má svou vlastní představu o&nbsp;kráse. Naše práce začíná tím, že porozumíme té vaší.</p>
+    </div>
+  </section>
+
+  <!-- PROČ DSTUDIO -->
+  <section class="sekce proc plocha plocha--krem" id="proc" data-parallax-layers aria-labelledby="proc-nadpis">
+    <div class="linky linky--zlab" data-parallax-layer="1" aria-hidden="true">
+      <svg viewBox="0 0 1440 800" preserveAspectRatio="none" focusable="false">
+        <path d="M 610 -40 C 668 140, 690 300, 640 460 S 590 700, 656 840"/>
+      </svg>
+    </div>
+    <div class="obal mrizka">
+      <header class="proc__hlava" data-parallax-layer="3">
+        <p class="stitek">Proč DSTUDIO</p>
+        <h2 class="nadpis-2" id="proc-nadpis">Péče, kterou pocítíte. Preciznost, kterou uvidíte.</h2>
+      </header>
+      <ul class="proc__seznam">
+        <li class="proc__bod odhal">
+          <h3 class="nadpis-3">Začínáme vašimi přáními</h3>
+          <p>Přijďte s&nbsp;vlastní představou, nebo ji společně s&nbsp;námi objevte. Nasloucháme vám a&nbsp;pomůžeme vybrat to, co vám bude slušet.</p>
+        </li>
+        <li class="proc__bod odhal">
+          <h3 class="nadpis-3">Na detailech záleží</h3>
+          <p>Tvar, odstín, čisté linie i&nbsp;závěrečné úpravy&nbsp;— věnujeme pozornost drobnostem, které společně tvoří krásný výsledek.</p>
+        </li>
+        <li class="proc__bod odhal">
+          <h3 class="nadpis-3">Milý a&nbsp;otevřený přístup</h3>
+          <p>Chceme, abyste se u&nbsp;nás mohli bez obav ptát, sdílet svá přání a&nbsp;říct nám, co vám vyhovuje.</p>
+        </li>
+        <li class="proc__bod odhal">
+          <h3 class="nadpis-3">Pohodlná rezervace</h3>
+          <p>Vyberte si službu, specialistku a&nbsp;volný termín v&nbsp;Noona. Na jednom místě najdete také aktuální ceny a&nbsp;podrobnosti o&nbsp;jednotlivých procedurách.</p>
+          <a class="tlacitko tlacitko--primarni" href="https://noona.app/dstudio" target="_blank" rel="noopener">Služby, ceník a&nbsp;rezervace<svg class="sipka" aria-hidden="true"><use href="#sipka"/></svg><span class="skryte"> (otevře se v novém okně)</span></a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SLUŽBY: pět oken salonu, pět směrů -->
+  <section class="sekce sluzby plocha plocha--bila" id="sluzby" data-parallax-layers aria-labelledby="sluzby-nadpis">
+    <div class="obal">
+      <header class="sluzby__hlava mrizka">
+        <div class="sluzby__nadpis" data-parallax-layer="3">
+          <p class="stitek">Služby</p>
+          <h2 class="nadpis-2" id="sluzby-nadpis">Pět oken, pět směrů péče</h2>
+        </div>
+        <p class="sluzby__uvod odhal">Manikúra, pedikúra, obočí, řasy a&nbsp;líčení. Vyberte si okno a&nbsp;podívejte se, co za ním nabízíme. Přání i&nbsp;cenu s&nbsp;vámi domluvíme před začátkem procedury.</p>
+      </header>
+
+      <div class="okna" data-okna>
+        <div class="okna__rada" data-okna-rada data-parallax-layer="2">
+          <a class="okna__tabule" href="#sluzba-manikura" data-okno="manikura"><svg class="okna__linky" aria-hidden="true" focusable="false"><use href="#linky-fasada"/></svg><span class="okna__nazev">Manikúra</span></a>
+          <a class="okna__tabule" href="#sluzba-pedikura" data-okno="pedikura"><svg class="okna__linky" aria-hidden="true" focusable="false"><use href="#linky-fasada"/></svg><span class="okna__nazev">Pedikúra</span></a>
+          <a class="okna__tabule" href="#sluzba-oboci" data-okno="oboci"><svg class="okna__linky" aria-hidden="true" focusable="false"><use href="#linky-fasada"/></svg><span class="okna__nazev">Obočí</span></a>
+          <a class="okna__tabule" href="#sluzba-rasy" data-okno="rasy"><svg class="okna__linky" aria-hidden="true" focusable="false"><use href="#linky-fasada"/></svg><span class="okna__nazev">Řasy</span></a>
+          <a class="okna__tabule" href="#sluzba-liceni" data-okno="liceni"><svg class="okna__linky" aria-hidden="true" focusable="false"><use href="#linky-fasada"/></svg><span class="okna__nazev">Líčení</span></a>
+        </div>
+
+        <div class="okna__detaily">
+          <div class="sluzba" id="sluzba-manikura" data-sluzba="manikura">
+            <h3 class="sluzba__nazev">Manikúra</h3>
+            <p class="sluzba__popis">Manikúra, gel lak, zpevnění a&nbsp;prodloužení nehtů. Váš styl, vaše délka: tvar i&nbsp;odstín s&nbsp;vámi domluvíme před začátkem.</p>
+            <p class="sluzba__cena" data-cena-od="nail-care/manikura/Manikúra" data-cena-popis="Manikúra" hidden></p>
+            <p class="sluzba__odkazy">
+              <a class="odkaz-sipka" href="#cenik-nail-care">Ceny manikúry<svg class="sipka" aria-hidden="true"><use href="#sipka"/></svg></a>
+              <a class="odkaz-sipka" href="https://noona.app/dstudio" target="_blank" rel="noopener">Rezervovat<svg class="sipka" aria-hidden="true"><use href="#sipka"/></svg><span class="skryte"> manikúru (otevře se v novém okně)</span></a>
+            </p>
+          </div>
+          <div class="sluzba" id="sluzba-pedikura" data-sluzba="pedikura">
+            <h3 class="sluzba__nazev">Pedikúra</h3>
+            <p class="sluzba__popis">Pedikúra s&nbsp;klasickým lakem nebo gel lakem, samostatné ošetření prstů a&nbsp;pat. Nabízíme také pánskou pedikúru.</p>
+            <p class="sluzba__cena" data-cena-od="nail-care/pedikura/Pedikúra" data-cena-popis="Pedikúra" hidden></p>
+            <p class="sluzba__odkazy">
+              <a class="odkaz-sipka" href="#cenik-nail-care">Ceny pedikúry<svg class="sipka" aria-hidden="true"><use href="#sipka"/></svg></a>
+              <a class="odkaz-sipka" href="https://noona.app/dstudio" target="_blank" rel="noopener">Rezervovat<svg class="sipka" aria-hidden="true"><use href="#sipka"/></svg><span class="skryte"> pedikúru (otevře se v novém okně)</span></a>
+            </p>
+          </div>
+          <div class="sluzba" id="sluzba-oboci" data-sluzba="oboci">
+            <h3 class="sluzba__nazev">Obočí</h3>
+            <p class="sluzba__popis">Úprava, barvení a&nbsp;laminace obočí. Jednotlivě i&nbsp;v&nbsp;kombinaci, podle toho, co vašemu obočí sedí.</p>
+            <p class="sluzba__cena" data-cena-od="beauty/oboci/Úprava obočí" data-cena-popis="Úprava obočí" hidden></p>
+            <p class="sluzba__odkazy">
+              <a class="odkaz-sipka" href="#cenik-beauty">Ceny obočí<svg class="sipka" aria-hidden="true"><use href="#sipka"/></svg></a>
+              <a class="odkaz-sipka" href="https://noona.app/dstudio" target="_blank" rel="noopener">Rezervovat<svg class="sipka" aria-hidden="true"><use href="#sipka"/></svg><span class="skryte"> úpravu obočí (otevře se v novém okně)</span></a>
+            </p>
+          </div>
+          <div class="sluzba" id="sluzba-rasy" data-sluzba="rasy">
+            <h3 class="sluzba__nazev">Řasy</h3>
+            <p class="sluzba__popis">Laminace a&nbsp;barvení řas, samostatně nebo společně při jedné návštěvě.</p>
+            <p class="sluzba__cena" data-cena-od="beauty/rasy/Laminace řas" data-cena-popis="Laminace řas" hidden></p>
+            <p class="sluzba__odkazy">
+              <a class="odkaz-sipka" href="#cenik-beauty">Ceny řas<svg class="sipka" aria-hidden="true"><use href="#sipka"/></svg></a>
+              <a class="odkaz-sipka" href="https://noona.app/dstudio" target="_blank" rel="noopener">Rezervovat<svg class="sipka" aria-hidden="true"><use href="#sipka"/></svg><span class="skryte"> péči o řasy (otevře se v novém okně)</span></a>
+            </p>
+          </div>
+          <div class="sluzba" id="sluzba-liceni" data-sluzba="liceni">
+            <h3 class="sluzba__nazev">Líčení</h3>
+            <p class="sluzba__popis">Expresní, denní, večerní i&nbsp;svatební líčení. Před svatbou si můžete domluvit zkoušku.</p>
+            <p class="sluzba__cena" data-cena-od="beauty/liceni/Expresní líčení" data-cena-popis="Expresní líčení" hidden></p>
+            <p class="sluzba__odkazy">
+              <a class="odkaz-sipka" href="#cenik-beauty">Ceny líčení<svg class="sipka" aria-hidden="true"><use href="#sipka"/></svg></a>
+              <a class="odkaz-sipka" href="https://noona.app/dstudio" target="_blank" rel="noopener">Rezervovat<svg class="sipka" aria-hidden="true"><use href="#sipka"/></svg><span class="skryte"> líčení (otevře se v novém okně)</span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NAŠE PRÁCE -->
+  <section class="sekce prace plocha plocha--krem" id="prace" data-parallax-layers aria-labelledby="prace-nadpis">
+    <div class="obal">
+      <header class="prace__hlava mrizka">
+        <div class="prace__nadpis" data-parallax-layer="3">
+          <p class="stitek">Naše práce</p>
+          <h2 class="nadpis-2" id="prace-nadpis">Detaily, které mluví za nás</h2>
+        </div>
+        <p class="prace__uvod odhal">Prohlédněte si práce našich specialistek a&nbsp;uložte si inspiraci pro svou příští návštěvu.</p>
+      </header>
+      <div class="galerie" data-galerie aria-live="polite"></div>
+      <noscript><p class="bez-skriptu">Galerie se načítá skriptem. Ukázky prací najdete také na Instagramu <a href="https://www.instagram.com/dstudio_cz/" target="_blank" rel="noopener">@dstudio_cz</a>.</p></noscript>
+      <p class="prace__instagram odhal">Další fotografie najdete na Instagramu <a href="https://www.instagram.com/dstudio_cz/" target="_blank" rel="noopener">@dstudio_cz<span class="skryte"> (otevře se v novém okně)</span></a>.</p>
+    </div>
+  </section>
+
+  <!-- NÁŠ TÝM -->
+  <section class="sekce tym plocha plocha--bila" id="tym" data-parallax-layers aria-labelledby="tym-nadpis">
+    <div class="linky linky--zlab" data-parallax-layer="1" aria-hidden="true">
+      <svg viewBox="0 0 1440 800" preserveAspectRatio="none" focusable="false">
+        <path d="M 656 -40 C 600 130, 610 330, 664 470 S 690 700, 630 840"/>
+      </svg>
+    </div>
+    <div class="obal mrizka">
+      <header class="tym__hlava" data-parallax-layer="3">
+        <p class="stitek">Náš tým</p>
+        <h2 class="nadpis-2" id="tym-nadpis">Poznejte nás blíž</h2>
+      </header>
+      <div class="tym__text text odhal">
+        <p>Za každým výsledkem stojí člověk, kterému svěřujete péči o&nbsp;svůj vzhled. Seznamte se s&nbsp;týmem DSTUDIO a&nbsp;vyberte si svou specialistku.</p>
+      </div>
+
+      <div class="urovne odhal">
+        <p class="urovne__nadpis">Middle · Senior · Top</p>
+        <p class="urovne__popis">Tři úrovně specialistů. Vyberte si tu svou při rezervaci. Podle úrovně se liší cena služby, například u&nbsp;manikúry:</p>
+        <dl class="urovne__rada" data-urovne-priklad="nail-care/manikura/Manikúra">
+          <div class="urovne__uroven"><dt>Middle</dt><dd data-uroven="middle">–</dd></div>
+          <div class="urovne__uroven"><dt>Senior</dt><dd data-uroven="senior">–</dd></div>
+          <div class="urovne__uroven"><dt>Top</dt><dd data-uroven="top">–</dd></div>
+        </dl>
+        <p class="urovne__poznamka">Všechny ceny najdete v&nbsp;<a href="#cenik">ceníku</a>. S&nbsp;výběrem služby i&nbsp;úrovně vám rádi pomůžeme.</p>
+        <a class="tlacitko tlacitko--primarni" href="https://noona.app/dstudio" target="_blank" rel="noopener">Vybrat specialistku v&nbsp;Noona<svg class="sipka" aria-hidden="true"><use href="#sipka"/></svg><span class="skryte"> (otevře se v novém okně)</span></a>
+      </div>
+
+      <div class="clenky" data-tym hidden></div>
+    </div>
+  </section>
+
+  <!-- RECENZE -->
+  <section class="sekce recenze plocha plocha--krem" id="recenze" data-parallax-layers aria-labelledby="recenze-nadpis">
+    <div class="obal">
+      <header class="recenze__hlava mrizka">
+        <div class="recenze__nadpis" data-parallax-layer="3">
+          <p class="stitek">Recenze</p>
+          <h2 class="nadpis-2" id="recenze-nadpis">Vaše zkušenosti s&nbsp;DSTUDIO</h2>
+        </div>
+        <p class="recenze__uvod odhal">Děkujeme za důvěru, doporučení a&nbsp;milá slova, která nás každý den inspirují.</p>
+      </header>
+      <div class="recenze__seznam" data-recenze></div>
+    </div>
+  </section>
+
+  <!-- CENÍK: čokoládový obal a krémové vnitřní strany jako u tištěného ceníku -->
+  <section class="cenik" id="cenik" aria-labelledby="cenik-nadpis">
+    <div class="cenik__obal plocha plocha--cokolada" data-parallax-layers>
+      <div class="linky" data-parallax-layer="1" aria-hidden="true">
+      <svg viewBox="0 0 1440 700" preserveAspectRatio="none" focusable="false">
+        <path d="M-20 220 C 240 300, 400 610, 640 560 S 840 180, 880 -30"/>
+        <path d="M-20 600 C 220 560, 380 300, 560 330 S 700 620, 760 740"/>
+      </svg>
+    </div>
+      <div class="obal cenik__obal-vnitrek">
+        <p class="stitek">Ceník služeb</p>
+        <h2 class="cenik__titul" id="cenik-nadpis" data-parallax-layer="3">Ceník<span class="skryte"> služeb</span></h2>
+        <div class="cenik__obal-text">
+          <p class="cenik__heslo">Krása začíná péčí.</p>
+          <p>Ceny závisí na úrovni specialistky: Middle, Senior nebo Top. Úroveň si vyberete při rezervaci.</p>
+          <a class="tlacitko tlacitko--svetle" href="https://noona.app/dstudio" target="_blank" rel="noopener">Rezervovat online<svg class="sipka" aria-hidden="true"><use href="#sipka"/></svg><span class="skryte"> (otevře se v novém okně)</span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="cenik__strany plocha plocha--krem" data-cenik data-uroven="vse">
+      <div class="cenik__tisk-hlava" aria-hidden="true">
+        <img src="/assets/svg/dstudio-logo-chocolate.svg" width="170" height="44" alt="">
+        <p>Ceník služeb · Milady Horákové 398/30, Praha 7 · +420 773 706 196 · noona.app/dstudio</p>
+      </div>
+      <div class="cenik__lista">
+        <div class="obal cenik__lista-vnitrek">
+          <fieldset class="prepinac" data-prepinac hidden>
+            <legend class="prepinac__legenda">Úroveň specialistky</legend>
+            <div class="prepinac__volby">
+              <label class="prepinac__volba"><input type="radio" name="uroven" value="vse" id="uroven-vse" checked><span>Všechny</span></label>
+              <label class="prepinac__volba"><input type="radio" name="uroven" value="middle" id="uroven-middle"><span>Middle</span></label>
+              <label class="prepinac__volba"><input type="radio" name="uroven" value="senior" id="uroven-senior"><span>Senior</span></label>
+              <label class="prepinac__volba"><input type="radio" name="uroven" value="top" id="uroven-top"><span>Top</span></label>
+            </div>
+          </fieldset>
+          <nav class="cenik__skoky" aria-label="Části ceníku" data-cenik-skoky></nav>
+        </div>
+      </div>
+      <div class="obal">
+        <div class="cenik__listy" data-cenik-listy aria-live="polite">
+          <p class="cenik__nacitani" data-cenik-stav>Načítáme ceník…</p>
+        </div>
+        <noscript><p class="bez-skriptu">Ceník se načítá skriptem. Aktuální ceny najdete také v rezervačním systému <a href="https://noona.app/dstudio" target="_blank" rel="noopener">Noona</a>.</p></noscript>
+        <div class="cenik__paticka">
+          <ul class="cenik__poznamky" data-cenik-poznamky></ul>
+          <div class="cenik__akce">
+            <button class="odkaz-sipka" type="button" data-tisk hidden>Vytisknout ceník<svg class="sipka" aria-hidden="true"><use href="#sipka"/></svg></button>
+            <a class="tlacitko tlacitko--primarni" href="https://noona.app/dstudio" target="_blank" rel="noopener">Rezervovat online<svg class="sipka" aria-hidden="true"><use href="#sipka"/></svg><span class="skryte"> (otevře se v novém okně)</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ČASTÉ OTÁZKY -->
+  <section class="sekce otazky plocha plocha--bila" id="otazky" data-parallax-layers aria-labelledby="otazky-nadpis">
+    <div class="linky linky--zlab" data-parallax-layer="1" aria-hidden="true">
+      <svg viewBox="0 0 1440 800" preserveAspectRatio="none" focusable="false">
+        <path d="M 630 -40 C 690 160, 664 320, 612 470 S 600 690, 660 840"/>
+      </svg>
+    </div>
+    <div class="obal mrizka">
+      <header class="otazky__hlava" data-parallax-layer="3">
+        <p class="stitek">Časté otázky</p>
+        <h2 class="nadpis-2" id="otazky-nadpis">Než k&nbsp;nám přijdete</h2>
+      </header>
+      <div class="otazky__seznam" data-faq></div>
+      <noscript><p class="bez-skriptu otazky__seznam">Odpovědi na časté otázky se načítají skriptem. Zavolejte nám na <a href="tel:+420773706196">+420&nbsp;773&nbsp;706&nbsp;196</a>, rádi poradíme.</p></noscript>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section class="sekce kontakt plocha plocha--krem" id="kontakt" data-parallax-layers aria-labelledby="kontakt-nadpis">
+    <div class="obal">
+      <div class="mrizka kontakt__uvod">
+        <header class="kontakt__hlava" data-parallax-layer="3">
+          <p class="stitek">Kontakt</p>
+          <h2 class="nadpis-2" id="kontakt-nadpis">Těšíme se na vás v&nbsp;DSTUDIO</h2>
+        </header>
+        <div class="kontakt__text text odhal">
+          <p>Najdete nás na Praze&nbsp;7. Před první návštěvou si prohlédněte trasu a&nbsp;fotografii vstupu, ať k&nbsp;nám snadno trefíte.</p>
+          <div class="kontakt__tlacitka">
+            <a class="tlacitko tlacitko--obrys" href="#cesta">Jak se k&nbsp;nám dostanete<svg class="sipka" aria-hidden="true"><use href="#sipka"/></svg></a>
+            <a class="tlacitko tlacitko--primarni" href="https://noona.app/dstudio" target="_blank" rel="noopener">Rezervovat online<svg class="sipka" aria-hidden="true"><use href="#sipka"/></svg><span class="skryte"> (otevře se v novém okně)</span></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cedule na dveře: tři sloupce oddělené tenkou linkou -->
+      <div class="cedule odhal">
+        <div class="cedule__sloupec">
+          <h3 class="cedule__stitek">Adresa</h3>
+          <p><a href="https://www.google.com/maps/search/?api=1&amp;query=Milady+Hor%C3%A1kov%C3%A9+398%2F30%2C+170+00+Praha+7" target="_blank" rel="noopener">Milady Horákové 398/30<br>170&nbsp;00 Praha&nbsp;7&nbsp;– Holešovice<span class="skryte"> (mapa se otevře v novém okně)</span></a></p>
+          <p class="cedule__mensi">Salon je ve dvoře, vchod vlevo.</p>
+        </div>
+        <div class="cedule__sloupec">
+          <h3 class="cedule__stitek">Otevírací doba</h3>
+          <p>Po–Pá&nbsp;&nbsp;9:00–19:00</p>
+          <p class="cedule__mensi">So–Ne pouze na objednání</p>
+        </div>
+        <div class="cedule__sloupec">
+          <h3 class="cedule__stitek">Telefon a&nbsp;Instagram</h3>
+          <p><a href="tel:+420773706196">+420&nbsp;773&nbsp;706&nbsp;196</a></p>
+          <p class="cedule__mensi">Volání a&nbsp;messengery</p>
+          <p><a href="https://www.instagram.com/dstudio_cz/" target="_blank" rel="noopener">@dstudio_cz<span class="skryte"> na Instagramu (otevře se v novém okně)</span></a></p>
+        </div>
+      </div>
+
+      <div class="cesta mrizka" id="cesta">
+        <div class="cesta__popis">
+          <h3 class="nadpis-3 cesta__nadpis">Jak se k&nbsp;nám dostanete</h3>
+          <ol class="cesta__kroky">
+            <li><span class="cesta__krok">Ulice</span> Milady Horákové 398/30, Praha&nbsp;7&nbsp;– Holešovice.</li>
+            <li><span class="cesta__krok">Průchod</span> Z&nbsp;ulice projdete do dvora.</li>
+            <li><span class="cesta__krok">Dvůr</span> Salon najdete ve dvoře.</li>
+            <li><span class="cesta__krok">Vchod vlevo</span> Navede vás cedule „Vchod vlevo · Salon ve dvoře“.</li>
+          </ol>
+          <p class="cesta__odkazy">
+            <a class="odkaz-sipka" href="https://mapy.cz/zakladni?q=Milady%20Hor%C3%A1kov%C3%A9%20398%2F30%2C%20Praha%207" target="_blank" rel="noopener">Otevřít v&nbsp;Mapy.cz<svg class="sipka" aria-hidden="true"><use href="#sipka"/></svg><span class="skryte"> (otevře se v novém okně)</span></a>
+            <a class="odkaz-sipka" href="https://www.google.com/maps/search/?api=1&amp;query=Milady+Hor%C3%A1kov%C3%A9+398%2F30%2C+170+00+Praha+7" target="_blank" rel="noopener">Otevřít v&nbsp;Mapách Google<svg class="sipka" aria-hidden="true"><use href="#sipka"/></svg><span class="skryte"> (otevře se v novém okně)</span></a>
+          </p>
+        </div>
+
+        <figure class="cesta__plan" data-parallax-layer="2">
+          <svg class="plan" viewBox="0 0 640 520" role="img" aria-labelledby="plan-titulek plan-popis" data-kresli>
+            <title id="plan-titulek">Schéma cesty do salonu</title>
+            <desc id="plan-popis">Z ulice Milady Horákové vede cesta průchodem do dvora. Vchod do salonu je po levé straně.</desc>
+            <!-- ulice -->
+            <path class="plan__linka" d="M24 452H616M24 500H616"/>
+            <text class="plan__napis" x="155" y="481" text-anchor="middle">MILADY HORÁKOVÉ</text>
+            <!-- dům u ulice s průchodem -->
+            <path class="plan__zed" d="M24 404V336H286V404ZM354 404V336H616V404Z"/>
+            <path class="plan__linka" d="M286 336V404M354 336V404"/>
+            <text class="plan__napis" x="155" y="376" text-anchor="middle">398/30</text>
+            <text class="plan__napis plan__napis--maly" x="382" y="376">PRŮCHOD</text>
+            <path class="plan__linka" d="M358 372h14"/>
+            <!-- dvůr -->
+            <path class="plan__linka" d="M24 336V56H616V336"/>
+            <text class="plan__napis plan__napis--maly" x="560" y="96" text-anchor="middle">DVŮR</text>
+            <!-- salon vlevo ve dvoře -->
+            <path class="plan__salon" d="M24 96H200V264H24Z"/>
+            <path class="plan__dvere" d="M200 204V236"/>
+            <text class="plan__napis plan__napis--svetly" x="112" y="174" text-anchor="middle">SALON</text>
+            <text class="plan__napis plan__napis--svetly plan__napis--maly" x="112" y="198" text-anchor="middle">VE DVOŘE</text>
+            <!-- trasa: z ulice průchodem do dvora a vlevo -->
+            <path class="plan__trasa" pathLength="1" d="M320 476V250C320 232 306 220 288 220H216"/>
+            <path class="plan__sipka" d="M228 208 216 220l12 12"/>
+            <circle class="plan__bod" cx="320" cy="476" r="5"/>
+            <g class="plan__cedule">
+              <path class="plan__linka" d="M346 196h44"/>
+              <text class="plan__napis" x="346" y="224">VCHOD VLEVO</text>
+            </g>
+          </svg>
+          <figcaption class="cesta__titulek">Schéma je orientační a&nbsp;není v&nbsp;měřítku.</figcaption>
+        </figure>
+
+        <figure class="foto-misto cesta__foto" data-placeholder="foto-vstupu">
+          <div class="foto-misto__ramecek">
+            <span class="foto-misto__cislo">Vstup</span>
+            <span class="foto-misto__text">Zde bude fotografie vstupu</span>
+          </div>
+          <figcaption class="cesta__titulek">Fotografii vstupu do salonu doplníme.</figcaption>
+        </figure>
+      </div>
+
+      <div class="mapa" data-mapa>
+        <div class="mapa__vyzva" data-mapa-vyzva>
+          <p class="mapa__text"><strong>Interaktivní mapa.</strong> Načteme ji až s&nbsp;vaším souhlasem, protože ji poskytuje Google a&nbsp;při zobrazení mu váš prohlížeč předá technické údaje. Podrobnosti najdete na stránce <a href="/cookies/">Cookies</a>.</p>
+          <button class="tlacitko tlacitko--obrys" type="button" data-souhlas-povolit="externi" hidden>Zobrazit mapu</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ZÁVĚREČNÁ VÝZVA -->
+  <section class="vyzva plocha plocha--smaragd" id="rezervace" data-parallax-layers aria-labelledby="vyzva-nadpis">
+    <div class="linky" data-parallax-layer="1" aria-hidden="true">
+      <svg viewBox="0 0 1440 600" preserveAspectRatio="none" focusable="false">
+        <path d="M-20 392 C 260 366, 480 214, 760 236 S 980 470, 1010 640"/>
+        <path d="M-20 226 C 280 258, 500 420, 800 388 S 960 150, 1000 -30"/>
+      </svg>
+    </div>
+    <div class="obal vyzva__vnitrek">
+      <h2 class="vyzva__nadpis" id="vyzva-nadpis" data-parallax-layer="3">
+        <span>Dopřejte si čas pro sebe.</span>
+        <span class="vyzva__druha">O&nbsp;detaily se postaráme my.</span>
+      </h2>
+      <div class="vyzva__akce odhal">
+        <p>Vyberte si termín své příští návštěvy.</p>
+        <a class="tlacitko tlacitko--svetle" href="https://noona.app/dstudio" target="_blank" rel="noopener">Rezervovat v&nbsp;DSTUDIO<svg class="sipka" aria-hidden="true"><use href="#sipka"/></svg><span class="skryte"> (otevře se v novém okně)</span></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pata plocha plocha--cokolada" id="pata">
+  <div class="obal">
+    <div class="pata__horni">
+      <a class="pata__logo" href="/" aria-label="DSTUDIO | Beauty Salon, úvodní stránka">
+        <img src="/assets/svg/dstudio-logo-cream.svg" width="218" height="56" alt="DSTUDIO Beauty Salon" loading="lazy" decoding="async">
+      </a>
+      <p class="pata__heslo">Čas pro vás. S&nbsp;péčí a&nbsp;láskou.</p>
+    </div>
+    <div class="pata__sloupce">
+      <div class="pata__sloupec">
+        <h2 class="pata__stitek">Salon</h2>
+        <p>Milady Horákové 398/30<br>170&nbsp;00 Praha&nbsp;7&nbsp;– Holešovice<br>ve dvoře, vchod vlevo</p>
+        <p><a href="tel:+420773706196">+420&nbsp;773&nbsp;706&nbsp;196</a><br><a href="https://www.instagram.com/dstudio_cz/" target="_blank" rel="noopener">Instagram @dstudio_cz<span class="skryte"> (otevře se v novém okně)</span></a></p>
+      </div>
+      <div class="pata__sloupec">
+        <h2 class="pata__stitek">Otevírací doba</h2>
+        <p>Po–Pá&nbsp;&nbsp;9:00–19:00<br>So–Ne pouze na objednání</p>
+        <p><a href="https://noona.app/dstudio" target="_blank" rel="noopener">Rezervace přes Noona<span class="skryte"> (otevře se v novém okně)</span></a></p>
+      </div>
+      <div class="pata__sloupec">
+        <h2 class="pata__stitek">Provozovatel</h2>
+        <p>D.&nbsp;Y.&nbsp;Beauty s.r.o.<br>IČO: 17419221<br>Milady Horákové 398/30<br>170&nbsp;00 Praha&nbsp;7&nbsp;– Holešovice</p>
+        <p>Odpovědný vedoucí: Diana Josypčuková</p>
+      </div>
+      <nav class="pata__sloupec" aria-label="Právní informace">
+        <h2 class="pata__stitek">Informace</h2>
+        <ul class="pata__odkazy">
+          <li><a href="/gdpr/">Ochrana osobních údajů</a></li>
+          <li><a href="/cookies/">Cookies</a></li>
+          <li><button class="pata__tlacitko" type="button" data-souhlas-otevrit hidden>Nastavení cookies</button></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="pata__dolni">
+      <p>DSTUDIO | Beauty Salon</p>
+      <p>© 2026 D.&nbsp;Y.&nbsp;Beauty s.r.o.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Lišta s rezervací pro mobil -->
+<aside class="lista-rezervace" aria-label="Rychlá rezervace" data-lista-rezervace hidden>
+  <p class="lista-rezervace__text">Po–Pá 9:00–19:00</p>
+  <a class="tlacitko tlacitko--primarni" href="https://noona.app/dstudio" target="_blank" rel="noopener">Rezervovat online<span class="skryte"> (otevře se v novém okně)</span></a>
+</aside>
+
+<!-- Souhlas s cookies a externím obsahem -->
+<section class="souhlas" data-souhlas aria-labelledby="souhlas-nadpis" hidden>
+  <div class="souhlas__vnitrek">
+    <h2 class="souhlas__nadpis" id="souhlas-nadpis">Cookies a&nbsp;externí obsah</h2>
+    <p class="souhlas__text">Web funguje i&nbsp;bez vašeho souhlasu. S&nbsp;ním navíc načteme mapu od Googlu a&nbsp;v&nbsp;budoucnu případné měření návštěvnosti. Volbu můžete kdykoli změnit v&nbsp;patičce. Více na stránce <a href="/cookies/">Cookies</a>.</p>
+
+    <form class="souhlas__nastaveni" data-souhlas-nastaveni hidden>
+      <div class="souhlas__kategorie">
+        <label class="volba" for="souhlas-nezbytne"><input type="checkbox" id="souhlas-nezbytne" checked disabled><span class="volba__nazev">Nezbytné</span></label>
+        <p>Uložení vaší volby v&nbsp;tomto okně. Bez něj by se okno zobrazovalo při každé návštěvě. Vždy zapnuté.</p>
+      </div>
+      <div class="souhlas__kategorie">
+        <label class="volba" for="souhlas-analyticke"><input type="checkbox" id="souhlas-analyticke" name="analyticke"><span class="volba__nazev">Analytické</span></label>
+        <p>Měření návštěvnosti. Nyní žádný měřicí nástroj nepoužíváme; souhlas se uplatní, až jej nasadíme.</p>
+      </div>
+      <div class="souhlas__kategorie">
+        <label class="volba" for="souhlas-externi"><input type="checkbox" id="souhlas-externi" name="externi"><span class="volba__nazev">Externí obsah (mapa)</span></label>
+        <p>Interaktivní mapa od Googlu v&nbsp;části Kontakt. Při načtení se Googlu předají technické údaje o&nbsp;vašem zařízení.</p>
+      </div>
+      <button class="tlacitko tlacitko--obrys" type="submit">Uložit nastavení</button>
+    </form>
+
+    <div class="souhlas__tlacitka" data-souhlas-tlacitka>
+      <button class="tlacitko tlacitko--obrys" type="button" data-souhlas-vse>Přijmout vše</button>
+      <button class="tlacitko tlacitko--obrys" type="button" data-souhlas-nic>Odmítnout nepovinné</button>
+      <button class="souhlas__odkaz" type="button" data-souhlas-upravit aria-expanded="false">Nastavení</button>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

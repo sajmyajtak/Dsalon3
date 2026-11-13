@@ -1,0 +1,6 @@
+{
+  "_navod": "Karty specialistek. Dokud je \"zobrazitClenky\" false, sekce Náš tým ukazuje jen vysvětlení tří úrovní a tlačítko do Noona. Po doplnění skutečných údajů přepněte na true. Každá členka: \"jmeno\", \"uroven\" (middle, senior nebo top), \"zamereni\" (např. Manikúra a pedikúra), \"foto\" = cesta ve složce /assets/img/tym/ bez přípony (svislý formát 4:5) a \"alt\" = popis fotografie. Vzor položky je v klíči \"_vzor\".",
+  "zobrazitClenky": false,
+  "clenky": [],
+  "_vzor": { "jmeno": "", "uroven": "senior", "zamereni": "", "foto": null, "alt": "" }
+}

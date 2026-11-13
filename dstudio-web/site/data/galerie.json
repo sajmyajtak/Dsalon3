@@ -1,0 +1,11 @@
+{
+  "_navod": "Fotografie prací. Každá položka: \"soubor\" = cesta k fotografii ve složce /assets/img/galerie/ bez přípony (web si sám vezme .avif, .webp a .jpg), \"sirka\" a \"vyska\" v pixelech, \"alt\" = stručný popis toho, co je na fotce, \"popisek\" = volitelný text pod fotkou. Formát fotografií je svislý 4:5. Dokud je \"soubor\" null, zobrazuje se na webu označené místo pro fotografii.",
+  "polozky": [
+    { "soubor": null, "sirka": 1200, "vyska": 1500, "alt": "", "popisek": "" },
+    { "soubor": null, "sirka": 1200, "vyska": 1500, "alt": "", "popisek": "" },
+    { "soubor": null, "sirka": 1200, "vyska": 1500, "alt": "", "popisek": "" },
+    { "soubor": null, "sirka": 1200, "vyska": 1500, "alt": "", "popisek": "" },
+    { "soubor": null, "sirka": 1200, "vyska": 1500, "alt": "", "popisek": "" },
+    { "soubor": null, "sirka": 1200, "vyska": 1500, "alt": "", "popisek": "" }
+  ]
+}

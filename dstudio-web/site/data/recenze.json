@@ -1,0 +1,8 @@
+{
+  "_navod": "Recenze klientek. Každá položka: \"text\" = znění recenze, \"jmeno\" = podpis (např. křestní jméno), \"sluzba\" = služba, které se recenze týká. Dokud je \"text\" null, zobrazuje se na webu označené místo pro recenzi. Vkládejte pouze skutečné recenze se souhlasem autorky.",
+  "polozky": [
+    { "text": null, "jmeno": null, "sluzba": null },
+    { "text": null, "jmeno": null, "sluzba": null },
+    { "text": null, "jmeno": null, "sluzba": null }
+  ]
+}
